@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" href="dis.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>   
+    <header>
+        <h1>Discussion Portal</h1>
+    </header>
+    <div id="whole">
+       <div id="left">
+        <div id="buttons">
+            <button id="new"><i class="fas fa-plus-circle"></i> New Question</button>
+            <input type="text" id="search" placeholder="🔍 Search questions...">
+        </div>
+        <ul id="questions">
+        </ul>
+       </div>
+       <div id="right-1">
+          <p id="heading">Welcome to Discussion Portal!</p>
+          <p id="para">Join our vibrant community of learners and experts. Ask questions, share knowledge, and grow together in this collaborative space.</p>
+          <input type="text" id="subject" placeholder="Question Subject">
+          <textarea id="ques" placeholder="Describe your question in detail..."></textarea>
+          <input type="button" id="submit" value="Post Question">
+       </div>
+       <div id="right-2">
+        <div>
+            <h2 class="head-1">Question</h2>
+            <div id="block-1"></div>
+            <button id="resolve"><i class="fas fa-check"></i> Mark Resolved</button>
+        </div>
+        <div class="response-block">
+            <h2 class="head-1">Responses</h2>
+            <ul id="res"></ul>
+        </div>
+        <div class="response-block">
+            <h2 class="head-1">Add Response</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <textarea id="comment" placeholder="Write your thoughtful response here..."></textarea>
+            <input type="button" id="submit-2" value="Post Response">
+        </div>
+       </div>
+    </div>
+    <script src="dis.js"></script>
+</body>
+</html>
